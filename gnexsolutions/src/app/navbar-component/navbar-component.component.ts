@@ -12,18 +12,25 @@ export class NavbarComponentComponent implements OnInit {
 
   public ngOnInit()
   {
-
     $(document).ready(function() {
-      $('.menu-trigger').click(function() {
+      $('.menu-trigger').click(function()
+      {
         $('nav ul').slideToggle(500);
-      });//end slide toggle
+      });
+      //end slide toggle
       
       $(window).resize(function() {		
-        if (  $(window).width() > 500 ) {			
-          $('nav ul').removeAttr('style');
+        if (  $(window).width() > 500 ) 
+        {			
+          $('nav ul').removeAttr('style');  
          }
-      });//end resize
-    });//end ready
+         else{
+          $('.navbar').removeAttr('style');
+          $('.nav-container').removeAttr('style');
+         }
+
+      });   //end resize
+    });   //end ready
 
   }
 

@@ -1,33 +1,66 @@
-/* .navbar{
-  -webkit-clip-path: polygon(25% 0%, 100% 0, 100% 100%, 25% 100%, 0% 50%);
-  background-color: rgb(44, 141, 57);
+
+.top{
+  display: flex;
+  flex-wrap:nowrap;
+}
+
+.gnex-logo{
+  width: 210px;
   height:80px;
-} */
 
+ }
 
-body {
-    background-color: #F8ECC2;
-    font-family: Arial, sans-serif;
-  }
-  
+.gnex-logo img{
+  width: 150px;
+  height: auto;
+  margin-top: 21px;
+  padding-left: 30px;
+  /* padding: 10px; */
+ 
+}
+
+.navbar{
+  -webkit-clip-path: polygon(30px 0%, 100% 0, 100% 100%, 30px  100%, 0% 50%);
+  background-color: rgb(96, 186, 70);
+  height:80px;
+  width: 100%;
+}
+
+.nav-container{
+  position:absolute;
+  right:0px;
+}
+
   nav {
     width: 100%;
-    background-color:#65A8A6;
+    display: flex;
+  }
+  nav ul  {
+    
   }
   
   nav ul li {
     display:inline-block;  
+    height:80px;
+    float: right;
+    display: flex;
+   
   }
   
   nav a {
-    color:#F8ECC2;
-    display:block;
+    font-family: 'Montserrat', sans-serif ;
+    font-size:20px;
+    font-weight: 500;
+    height:100%;
+    width:100%;
+    color:rgb(255, 255, 255);
     text-decoration: none;
-    padding:20px 30px;
+    text-align: center;
+    padding:25px 0px;
    }
   
   nav a:hover {
-    background: #E65540;
+    background: rgb(3, 124, 13);
   }
   
   .menu-trigger {
@@ -37,10 +70,10 @@ body {
   
   @media screen and (max-width:500px) {
     .menu-trigger {
-      display:block !important;
+      display:flex !important;
     }
     nav ul li {
-      display:block ;
+      display: flex;
       border-top:1px #79896D solid;    
     }
     nav ul {
