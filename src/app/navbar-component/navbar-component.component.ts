@@ -10,27 +10,24 @@ export class NavbarComponentComponent implements OnInit {
 
   constructor() { }
 
-  public ngOnInit()
-  {
+  public ngOnInit() {
     $(document).ready(function() {
-      $('.menu-trigger').click(function()
-      {
+      $('.menu-trigger').click(function() {
         $('nav ul').slideToggle(500);
       });
-      //end slide toggle
-      
-      $(window).resize(function() {		
-        if (  $(window).width() > 500 ) 
-        {			
-          $('nav ul').removeAttr('style');  
-         }
-         else{
+      // end slide toggle
+
+      $(window).resize(function() {
+        if (  $(window).width() > 500 )
+        {
+          $('nav ul').removeAttr('style');
+         } else {
           $('.navbar').removeAttr('style');
           $('.nav-container').removeAttr('style');
          }
 
-      });   //end resize
-    });   //end ready
+      });   // end resize
+    });   // end ready
 
   }
 
