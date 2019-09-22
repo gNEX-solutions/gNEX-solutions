@@ -1,0 +1,19 @@
+.aboutusBack{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(96, 186, 70);
+}
+
+.aboutusTitle{
+    font-size:50px;
+    padding:30px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.aboutusTitle2{
+    font-size:32px;
+    padding:30px 0px;
+    text-align: justify;
+    font-weight: lighter;
+}
