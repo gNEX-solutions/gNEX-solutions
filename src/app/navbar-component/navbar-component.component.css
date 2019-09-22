@@ -2,11 +2,18 @@
 .top{
   display: flex;
   flex-wrap:nowrap;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index:99999;
+  top: 0;
+  width:150%;
+  margin-top: 30px;
 }
 
 .gnex-logo{
   width: 210px;
   height:80px;
+  z-index:999;
 
  }
 
@@ -16,7 +23,17 @@
   margin-top: 21px;
   padding-left: 30px;
   /* padding: 10px; */
- 
+}
+.gnex-logo-behind{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50&1+0,0+100 */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 10%, rgba(255,255,255,0.5) 70%, rgba(255,255,255,0) 80%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 10%,rgba(255,255,255,0.5) 70%,rgba(255,255,255,0) 80%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 10%,rgba(255,255,255,0.5) 70%,rgba(255,255,255,0) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+width: 100%;
+height:100px;
+position: absolute;
+top:0;
 }
 
 .navbar{
@@ -28,56 +45,116 @@
 
 .nav-container{
   position:absolute;
-  right:0px;
+  left:0px;
+  width:65%;
 }
 
   nav {
     width: 100%;
-    display: flex;
+
   }
   nav ul  {
-    
+
   }
   
   nav ul li {
     display:inline-block;  
     height:80px;
     float: right;
-    display: flex;
-   
+
   }
   
   nav a {
+
     font-family: 'Montserrat', sans-serif ;
-    font-size:20px;
+    font-size:1.3vw;
     font-weight: 500;
     height:100%;
     width:100%;
     color:rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
-    padding:25px 0px;
+    padding-top:25px;
+    padding-bottom:25px;
+    display: block;
    }
   
-  nav a:hover {
+   nav ul li :hover {
     background: rgb(3, 124, 13);
   }
   
   .menu-trigger {
     display:none !important;
     color:#F8ECC2;
+    padding:0;
   }
-  
-  @media screen and (max-width:500px) {
+  .menu-trigger>i{
+    right:0 !important;
+    color: rgb(62, 128, 44);
+  }
+  .menu-trigger>i:hover{
+    right:0 !important;
+    color: rgb(31, 87, 16);
+  }
+  @media screen and (max-width:800px) {
+
+
+    .navbar{
+      /* -webkit-clip-path: polygon(30px 0%, 100% 0, 100% 100%, 30px  100%, 0% 50%);
+      background-color: rgba(95, 186, 70, 0);
+      height:80px !important;
+      width: 100% !important; */
+    }
+
     .menu-trigger {
-      display:flex !important;
+      display:block !important;
     }
     nav ul li {
-      display: flex;
+      display: none;
       border-top:1px #79896D solid;    
     }
     nav ul {
       display:none;
     }
+  }
+
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    background-color: rgb(96, 186, 70);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
   }
   

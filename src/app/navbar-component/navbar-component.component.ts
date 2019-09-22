@@ -10,6 +10,15 @@ export class NavbarComponentComponent implements OnInit {
 
   constructor() { }
 
+  public openNav(){
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  
+  public closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
   public ngOnInit() {
     $(document).ready(function() {
       $('.menu-trigger').click(function() {
@@ -22,8 +31,7 @@ export class NavbarComponentComponent implements OnInit {
         {
           $('nav ul').removeAttr('style');
          } else {
-          $('.navbar').removeAttr('style');
-          $('.nav-container').removeAttr('style');
+
          }
 
       });   // end resize

@@ -1,12 +1,16 @@
-
 <div class="top">
         <div class="gnex-logo">
                 <img src="/assets/img/gnex_logo.png" >
         </div>
+        <div class="gnex-logo-behind">
+        
+        </div>
         <nav class="navbar">
             <div class="nav-container col-md-12">
-                <a href="#" class="menu-trigger">MENU</a>
-                <ul class="row">
+                <a href="#" class="menu-trigger" (click)="openNav()" >
+                        <i class="fa fa-bars fa-4x" aria-hidden="true" ></i>
+                </a>
+                <ul>
                     <li class="col-md-2"><a href="#">CONTACT</a></li>
                     <li class="col-md-2"><a href="#">ABOUT US</a></li>
                     <li class="col-md-2"><a routerLink="/portfolio" routerLinkActive="active">PORTFOLIO</a></li>
@@ -15,4 +19,15 @@
                 </ul>
             </div>
         </nav>
+
+</div>
+
+<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" (click)="closeNav()">&times;</a>
+        <a href="#">HOME</a>
+        <a href="#">SOLUTIONS</a>
+        <a href="#">SOLUTIONS</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">CONTACT</a>
 </div>
