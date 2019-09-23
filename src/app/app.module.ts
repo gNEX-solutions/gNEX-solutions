@@ -7,6 +7,9 @@ import { NavbarComponentComponent } from './navbar-component/navbar-component.co
 import { FooterComponentComponent } from './footer-component/footer-component.component';
 import { PortfolioComponentComponent } from './portfolio-component/portfolio-component.component';
 import { SolutionsComponentComponent } from './solutions-component/solutions-component.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TeamCarousalComponent } from './team-carousal/team-carousal.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';  
 
 @NgModule({
   declarations: [
@@ -14,11 +17,12 @@ import { SolutionsComponentComponent } from './solutions-component/solutions-com
     NavbarComponentComponent,
     FooterComponentComponent,
     PortfolioComponentComponent,
-    SolutionsComponentComponent
+    SolutionsComponentComponent,
+    TeamCarousalComponent,
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule,CarouselModule,
+    AppRoutingModule,NgbModule, CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

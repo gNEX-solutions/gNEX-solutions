@@ -24,12 +24,15 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css",
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "./node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": [ "./node_modules/jquery/dist/jquery.min.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.js"]
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,6 +95,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -123,6 +127,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "gnexsolutions"
 }
