@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponentComponent } from './navbar-component/navbar-component.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
 import { PortfolioComponentComponent } from './portfolio-component/portfolio-component.component';
+import { SolutionsComponentComponent } from './solutions-component/solutions-component.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TeamCarousalComponent } from './team-carousal/team-carousal.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';  
@@ -16,6 +17,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     NavbarComponentComponent,
     FooterComponentComponent,
     PortfolioComponentComponent,
+    SolutionsComponentComponent,
     TeamCarousalComponent,
   ],
   imports: [
