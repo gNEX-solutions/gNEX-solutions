@@ -9,7 +9,8 @@ import { PortfolioComponentComponent } from './portfolio-component/portfolio-com
 import { SolutionsComponentComponent } from './solutions-component/solutions-component.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TeamCarousalComponent } from './team-carousal/team-carousal.component';
-import { CarouselModule } from 'ngx-bootstrap/carousel';  
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { HomeCarousalComponentComponent } from './home-carousal-component/home-carousal-component.component';  
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     PortfolioComponentComponent,
     SolutionsComponentComponent,
     TeamCarousalComponent,
+    HomeCarousalComponentComponent,
   ],
   imports: [
     BrowserModule,CarouselModule,

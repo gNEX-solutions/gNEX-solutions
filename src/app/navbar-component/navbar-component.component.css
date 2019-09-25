@@ -122,23 +122,17 @@
       transform: translate3d(4px, 0, 0);
     }
   }
-    
     .menu-trigger {
       display:none !important;
       right: 45px !important;
       top:17px;
-      position: absolute;
+      position: fixed;
       padding: 25px 20px 0!important;
       z-index:9999 !important;
     }
-    .menu-trigger>i{
-      color: rgb(62, 128, 44);
-      width: fit-content;
-      margin-top: auto !important;
-      margin-bottom: auto !important;
-    }
-    .menu-trigger>i:hover{
-      color: rgb(31, 87, 16);
+    
+    .menu-trigger-icon:hover div{
+      background-color: rgb(31, 87, 16);
     }
     .menu-trigger-icon {
       margin: 1em;
