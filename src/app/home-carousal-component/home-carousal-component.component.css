@@ -16,6 +16,7 @@
  .fadeIn {
    -webkit-animation-name: fadeIn;
    animation-name: fadeIn;
+   height:500px !important;
  }
 
  :host >>>.carousel-control span {
@@ -67,21 +68,28 @@
 }
 .carousal-caption {
   position: absolute;
-  left: 170px;
+  left: 80px;
   top:50px;
   z-index: 9999;
   font-family: 'Montserrat', sans-serif ;
 }
 .carousal-caption p{
     background-color: unset !important;
-    font-size: 5vw;
+    font-size: 70px;
     margin-top:-20px;
 }
 
 .carousal-caption-sub {
   position: absolute;
-  left: 170px;
-  top:300px;
+  left: 80px;
+  top:320px;
   z-index: 9999;
   width: 500px;
+}
+
+.item img{
+  /* height:500px !important;
+  width: auto !important;
+  float: right;
+  margin-right:170px !important; */
 }
