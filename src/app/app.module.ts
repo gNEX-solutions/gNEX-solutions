@@ -27,6 +27,6 @@ import { HomeCarousalComponentComponent } from './home-carousal-component/home-c
     AppRoutingModule,NgbModule, CarouselModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,HomeCarousalComponentComponent]
 })
 export class AppModule { }

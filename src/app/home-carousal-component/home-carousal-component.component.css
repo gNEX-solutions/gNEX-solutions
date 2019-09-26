@@ -1,0 +1,67 @@
+.animated {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+   
+ }
+ @-webkit-keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+ }
+ @keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+ }
+ .fadeIn {
+   -webkit-animation-name: fadeIn;
+   animation-name: fadeIn;
+ }
+
+ :host >>>.carousel-control span {
+  font-size: 80px;
+  color: #696969;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: rgba(199, 199, 199, 0);
+  top: 46%;
+  border-radius: 50%;
+  line-height: 1;
+
+}
+.right.carousel-control.carousel-control-next{
+  position: absolute !important;
+}
+
+
+:host >>>.carousel-control span:before {
+  display: block;
+  line-height: 0.45;
+}
+
+:host >>> .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transition: 0.3s;
+  margin: 1px;
+  z-index:-1;
+}
+
+:host >>> .carousel-indicators li   {
+  border-color:  rgb(73, 177, 95) !important;
+}
+
+:host >>> .active{
+  background-color: rgb(30, 148, 56) !important;
+  z-index:-1 !important;
+}
+
+::ng-deep .carousel-control-prev, ::ng-deep .carousel-control-next {
+  background: unset !important;
+}
+
+::ng-deep *:focus {
+  outline-color: rgb(253, 253, 253);
+}
