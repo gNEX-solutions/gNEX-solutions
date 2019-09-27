@@ -10,7 +10,8 @@ import { SolutionsComponentComponent } from './solutions-component/solutions-com
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TeamCarousalComponent } from './team-carousal/team-carousal.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { HomeCarousalComponentComponent } from './home-carousal-component/home-carousal-component.component';  
+import { HomeCarousalComponentComponent } from './home-carousal-component/home-carousal-component.component';
+import { HomeComponentComponent } from './home-component/home-component.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +22,13 @@ import { HomeCarousalComponentComponent } from './home-carousal-component/home-c
     SolutionsComponentComponent,
     TeamCarousalComponent,
     HomeCarousalComponentComponent,
+    HomeComponentComponent,
   ],
   imports: [
-    BrowserModule,CarouselModule,
-    AppRoutingModule,NgbModule, CarouselModule.forRoot()
+    BrowserModule, CarouselModule,
+    AppRoutingModule, NgbModule, CarouselModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent,HomeCarousalComponentComponent]
+  bootstrap: [AppComponent, HomeCarousalComponentComponent]
 })
 export class AppModule { }
