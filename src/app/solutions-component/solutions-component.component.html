@@ -1,1 +1,23 @@
-<p>solutions-component works!</p>
+<div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-lg-12">
+        <div class="card">
+          <div class="card-header">
+            <h1>Solutions</h1>
+          </div>
+          <div class="card-body">
+            <ul class="list-group" *ngFor="let list of solutionsList">
+              <li class="solutions-list list-group-item" type="button" data-toggle="collapse" data-target="#collapseList" aria-expanded="false" aria-controls="collapseList">
+                {{ list.header }}
+                <div class="collapse" id="collapseList">
+                  <div class="card card-body">
+                    {{ list.description }}
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
