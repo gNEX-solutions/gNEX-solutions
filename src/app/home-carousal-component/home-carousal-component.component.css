@@ -1,23 +1,36 @@
 .animated {
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
+    -webkit-animation-duration: 3s !important;
+    animation-duration: 3s !important;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-   
  }
  @-webkit-keyframes fadeIn {
    0% {opacity: 0;}
-   100% {opacity: 1;}
+  100% {opacity: 1;}
  }
  @keyframes fadeIn {
    0% {opacity: 0;}
    100% {opacity: 1;}
  }
+ @-webkit-keyframes fadeOut {
+  0% {opacity: 1;}
+ 100% {opacity: 0;}
+}
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
  .fadeIn {
-   -webkit-animation-name: fadeIn;
-   animation-name: fadeIn;
+   -webkit-animation-name: fadeOut;
+   animation-name: fadeOut;
    height:500px !important;
  }
+
+ :host >>> .fadeIn.active{
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  height:500px !important;
+}
 
  :host >>>.carousel-control span {
   font-size: 80px;
@@ -30,9 +43,6 @@
   border-radius: 50%;
   line-height: 1;
 
-}
-.right.carousel-control.carousel-control-next{
-  position: absolute !important;
 }
 
 
@@ -62,10 +72,16 @@
 ::ng-deep .carousel-control-prev, ::ng-deep .carousel-control-next {
   background: unset !important;
 }
-
+::ng-deep .home-carousel .carousel-control-prev {
+  margin-left: -50px ;
+ }
+ ::ng-deep .home-carousel .carousel-control-next {
+   margin-right: -50px ;
+ }
 ::ng-deep *:focus {
   outline-color: rgb(253, 253, 253);
 }
+
 .carousal-caption {
   position: absolute;
   left: 80px;
@@ -92,4 +108,33 @@
   width: auto !important;
   float: right;
   margin-right:170px !important; */
+}
+
+@media screen and (max-width:950px) {
+  .carousal-caption p{
+    font-size:40px;
+  }
+  .carousal-caption {
+    top:150px !important;
+    margin-left: -50px;
+  }
+  .carousal-caption-sub {
+    left: 30px;
+    top:300px;
+    z-index: 9999;
+    width: 90%;
+  }
+  .item img{
+    /* height:200px !important;
+    width: auto !important;
+    margin-left:-70px !important; */
+  }
+
+  ::ng-deep .home-carousel .carousel-control-prev {
+   margin-left: -30px !important;
+  }
+  ::ng-deep .home-carousel .carousel-control-next {
+    margin-right: -30px !important;
+  }
+  
 }

@@ -6,7 +6,7 @@
     position: sticky;
     z-index:1;
     top: 0;
-    width:150%;
+    margin-right:-50px !important;
     margin-top: 30px;
   }
 
@@ -56,7 +56,7 @@
   .nav-container{
     position:absolute;
     left:0px;
-    width:65%;
+    width:100%;
     height:80px;
   }
 
@@ -124,7 +124,7 @@
   }
     .menu-trigger {
       display:none !important;
-      right: 45px !important;
+      right: 45px;
       top:17px;
       position: fixed;
       padding: 25px 20px 0!important;
@@ -137,6 +137,7 @@
     .menu-trigger-icon {
       margin: 1em;
       width: 40px;
+      position: sticky !important;
     }
     .menu-trigger-icon-1, 
     .menu-trigger-icon-3, 
@@ -149,6 +150,14 @@
       margin: 6px 0;
       transition: all .2s ease-in-out;
     }
+
+    @media screen and (max-width:450px) {
+      .menu-trigger {
+        right: 20px !important;
+      }
+
+    }
+
     /* .menu-trigger-icon-1{
       transform: translateY(12px) rotate(135deg);
     }
@@ -210,7 +219,7 @@
       padding: 8px 8px 8px 32px;
       text-decoration: none;
       font-family: 'Montserrat', sans-serif ;
-      font-size:1.4vw;
+      font-size:20px;
       color: #ffffff;
       display: block;
       transition: 0.3s;
