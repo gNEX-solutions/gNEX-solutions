@@ -29,6 +29,8 @@ import { HomePortfolioComponent } from './home-portfolio/home-portfolio.componen
     HomeComponentComponent,
     AboutusComponentComponent,
     TeamcardsComponentComponent,
+    HomePortfolioComponent,
+    TeamcardsComponentComponent,
     HomePortfolioComponent
   ],
   imports: [
