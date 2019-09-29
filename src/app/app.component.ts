@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'gnexsolutions';
+  faCoffee = faCoffee;
   router: string;
 
   constructor(private _router: Router) {

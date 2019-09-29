@@ -8,10 +8,14 @@ import { FooterComponentComponent } from './footer-component/footer-component.co
 import { PortfolioComponentComponent } from './portfolio-component/portfolio-component.component';
 import { SolutionsComponentComponent } from './solutions-component/solutions-component.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { TeamCarousalComponent } from './team-carousal/team-carousal.component';
+import { TeamCarousalComponent } from './team-carousal-component/team-carousal.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { HomeCarousalComponentComponent } from './home-carousal-component/home-carousal-component.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
+import { AboutusComponentComponent } from './aboutus-component/aboutus-component.component';
+import { TeamcardsComponentComponent } from './team-cards-component/teamcards-component.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HomePortfolioComponent } from './home-portfolio/home-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +27,14 @@ import { HomeComponentComponent } from './home-component/home-component.componen
     TeamCarousalComponent,
     HomeCarousalComponentComponent,
     HomeComponentComponent,
+    AboutusComponentComponent,
+    TeamcardsComponentComponent,
+    HomePortfolioComponent,
+    TeamcardsComponentComponent,
+    HomePortfolioComponent
   ],
   imports: [
-    BrowserModule, CarouselModule,
+    BrowserModule, CarouselModule,FontAwesomeModule,
     AppRoutingModule, NgbModule, CarouselModule.forRoot()
   ],
   providers: [],
