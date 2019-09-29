@@ -1,0 +1,31 @@
+.footer-main{
+    background-color: rgb(42, 42, 42);
+    width: 100% ;
+    height: 500px;
+    position: absolute;
+    left:0px;
+}
+
+.footer-logo img{
+    width: 200px;
+    height:auto;
+    padding: 20px;
+}
+
+.footer-right{
+    padding-left: 50px;
+    margin-top:50px;
+    border-right: 3px solid rgb(255, 255, 255);
+    height: 400px;
+}
+
+.footer-left{
+
+}
+
+.footer-address p{
+    color: white;
+    font-size: 11px;
+    font-weight: 100;
+    margin-top: -8px;
+}
