@@ -1,5 +1,5 @@
 .aboutusTitle{
-    font-size:50px;
+    font-size:80px;
     padding:30px 0px;
     text-align: center;
     font-weight: bold;
@@ -19,7 +19,7 @@ body{
     width: 1200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 15px;
+    grid-gap: 50px;
     margin: 0 auto;
   }
   .card{
@@ -103,10 +103,11 @@ body{
   display: block;
   margin-top: 5px;
    } 
-/* 
+
    .aboutusBack{
-    color: white;
+    /* color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(96, 186, 70);
-    z-index: -1.5;
-} */
+    z-index: -1.5; */
+    margin-bottom: 50px;
+}
