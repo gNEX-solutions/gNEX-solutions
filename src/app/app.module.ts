@@ -12,6 +12,7 @@ import { TeamCarousalComponent } from './team-carousal/team-carousal.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { HomeCarousalComponentComponent } from './home-carousal-component/home-carousal-component.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
+import { HomePortfolioComponent } from './home-portfolio/home-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HomeComponentComponent } from './home-component/home-component.componen
     TeamCarousalComponent,
     HomeCarousalComponentComponent,
     HomeComponentComponent,
+    HomePortfolioComponent,
   ],
   imports: [
     BrowserModule, CarouselModule,
