@@ -15,6 +15,7 @@ import { HomeComponentComponent } from './home-component/home-component.componen
 import { AboutusComponentComponent } from './aboutus-component/aboutus-component.component';
 import { TeamcardsComponentComponent } from './team-cards-component/teamcards-component.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HomePortfolioComponent } from './home-portfolio/home-portfolio.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeComponentComponent,
     AboutusComponentComponent,
     TeamcardsComponentComponent
+    HomePortfolioComponent,
   ],
   imports: [
     BrowserModule, CarouselModule,FontAwesomeModule,
