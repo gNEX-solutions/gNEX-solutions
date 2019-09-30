@@ -7,25 +7,91 @@
 }
 
 .footer-logo img{
-    width: 200px;
+    width: 250px;
     height:auto;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .footer-right{
-    padding-left: 50px;
+    padding-left: 80px;
     margin-top:50px;
     border-right: 3px solid rgb(255, 255, 255);
     height: 400px;
 }
 
 .footer-left{
-
+padding-right: 100px;
 }
-
+.footer-address {
+    margin-top: 20px;
+}
 .footer-address p{
     color: white;
     font-size: 11px;
     font-weight: 100;
     margin-top: -8px;
+}
+
+.footer-phone{
+    margin-top: 20px;
+    color : white;
+    margin-left: -12px;
+    font-size: 20px;
+}
+
+.footer-phone p:nth-child(2){
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+.footer-phone div:first-child{
+     display:flex;
+}
+
+.footer-phone  div:nth-child(2){
+    margin-left: 45px;
+    }
+
+.footer-phone i{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.footer-phone div{
+  width: fit-content;
+  margin-left: 15px;
+}
+
+.footer-contact-text1{
+    margin-top: 30px;
+    margin-left: 50px;
+    display: block !important;
+}
+.footer-contact-text1 p{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(93, 93, 93);
+    float: right;
+}
+.footer-contact-text1 textarea{
+    margin-top: 0px;
+    padding-left: 50px;
+    width: 100%;
+    
+}
+.footer-contact-text1 input{
+    display: block;
+    width: 300px;
+    margin-top: 10px;
+    float: right;
+}
+
+.footer-contact-text1  button{
+    margin-top: 10px;
+    display: block;
+    float: right;
+    height: 30px;
+    background-color:rgb(3, 124, 13);
+    color: white;
 }
