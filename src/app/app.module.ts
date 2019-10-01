@@ -16,6 +16,9 @@ import { AboutusComponentComponent } from './aboutus-component/aboutus-component
 import { TeamcardsComponentComponent } from './team-cards-component/teamcards-component.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomePortfolioComponent } from './home-portfolio/home-portfolio.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -31,10 +34,11 @@ import { HomePortfolioComponent } from './home-portfolio/home-portfolio.componen
     TeamcardsComponentComponent,
     HomePortfolioComponent,
     TeamcardsComponentComponent,
-    HomePortfolioComponent
+    HomePortfolioComponent,
+
   ],
   imports: [
-    BrowserModule, CarouselModule,FontAwesomeModule,
+    BrowserModule, CarouselModule,FontAwesomeModule,FormsModule,BrowserModule,HttpClientModule,
     AppRoutingModule, NgbModule, CarouselModule.forRoot()
   ],
   providers: [],

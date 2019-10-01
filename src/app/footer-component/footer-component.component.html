@@ -1,6 +1,6 @@
 <div class="footer-main">
     <div class="row">
-        <div  class="footer-right col-md-4">
+        <div  class="footer-left col-md-4">
             <div class="footer-logo">
                 <img src="./assets/img/gnex_logo_white.png"/>
             </div>
@@ -21,20 +21,24 @@
 
         </div>
         
-        <div class="footer-left col-md-8">
+        <div class="footer-right col-md-8">
          
             <div class="footer-contact-text1">
-                    <p>CONTACT US</p>
-                    <div class="row">             
-                        <textarea rows="9" cols="50"></textarea>
-                    </div>
-                   <div class="row"> <input type="text" value=""></div>
-                   <div class="row"> <input type="text" value=""></div>
-                   <div class="row"> <input type="text" value=""></div>
-                   <button class="btn" id="contact-submit">SUBMIT</button>
+                    <p>CONTACT US</p>     
+                    <form>
+                        <div class="row">    
+                           <div class="error-msg" >{{error}}</div>  
+                            <textarea  class="form-control" rows="9" cols="50"  name="message"   placeholder=" &nbsp;Whats on your mind? *" [(ngModel)]="message"></textarea>
+                        </div>
+                        <div class="row"> <input  class="form-control" type="text" name="name"  value="" [(ngModel)]="name" placeholder=" &nbsp;Name *"></div>
+                        <div class="row"> <input  class="form-control" type="email"  name="email" value="" [(ngModel)]="email" placeholder=" &nbsp;E-mail *" ></div>
+                        <div class="row"> <input  class="form-control" type="text" name="phone" value="" [(ngModel)]="phone" placeholder=" &nbsp;Phone number" ></div>
+                        <button class="btn" type="button" id="contact-submit" (click)="sendMail()">SUBMIT</button>
+  
+                    </form>
             </div>
         </div>
-
+        
     </div>
     <div class="footer-end">
         <div>Designed and Developed by gNEX</div>
