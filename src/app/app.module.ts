@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponentComponent } from './navbar-component/navbar-component.component';
@@ -19,7 +18,7 @@ import { HomePortfolioComponent } from './home-portfolio/home-portfolio.componen
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PopupComponent } from './popup/popup.component';
-
+import { PricingComponentComponent } from './pricing-component/pricing-component.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +36,7 @@ import { PopupComponent } from './popup/popup.component';
     TeamcardsComponentComponent,
     HomePortfolioComponent,
     PopupComponent,
-
+    PricingComponentComponent,
   ],
   imports: [
     BrowserModule, CarouselModule,FontAwesomeModule,FormsModule,BrowserModule,HttpClientModule,

@@ -3,4 +3,5 @@ export class SolutionsList{
     id:number;
     header:string;
     description:string;
+    status:number;
 }
