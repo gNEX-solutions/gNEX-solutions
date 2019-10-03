@@ -29,24 +29,26 @@ export class FooterComponentComponent implements OnInit {
     if(this.name == undefined){
        this.error = "please fill the fields with *";
       } 
-    if(this.email == undefined){
+    else if(this.email == undefined){
         this.error = "please fill the fields with *";
       } 
-    if(this.message == undefined){
+    else if(this.message == undefined){
        this.error = "please fill the fields with *";
       } 
+    else{
 
+      this.error = "";
 
       let httpOptions = {
         headers: new HttpHeaders({
           'Content-Type': 'application/json'
         })
       }
-
     const  params = new  HttpHeaders().set('name', this.name).set('email',this.email).set('message',this.message).set('phone', this.phone);
     this.httpClient.post("http://gnexsolutions.com/mail_sender.php",{"name":this.name,"email":this.email,"message":this.message,"phone":this.phone},httpOptions).subscribe((data) => {
-      alert(JSON.stringify(data));
+    alert(JSON.stringify(data));
   });
+    }
 }
 
 }

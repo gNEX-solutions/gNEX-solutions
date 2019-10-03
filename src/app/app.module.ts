@@ -18,6 +18,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomePortfolioComponent } from './home-portfolio/home-portfolio.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { PopupComponent } from './popup/popup.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomePortfolioComponent,
     TeamcardsComponentComponent,
     HomePortfolioComponent,
+    PopupComponent,
 
   ],
   imports: [

@@ -112,6 +112,12 @@
     font-size:12px;
     padding: 0px;
 }
+.footer-end img{
+    padding: 0px;
+    margin-top:-5px;
+    float: right;
+    margin-right:50px;
+}
 .error-msg{
     font-size:12px !important;
     color:red !important;
