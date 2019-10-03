@@ -28,6 +28,19 @@ export class SolutionsComponentComponent implements OnInit {
         description: "Sample content2",
         status: 0
       },
+      {
+        id: 2,
+        header: "Graphic designing",
+        description: "Sample content3",
+        status: 0
+      },
+      {
+        id: 3,
+        header: "Branding",
+        description: "Sample content4",
+        status: 0
+      },
+
     ]
   }
   
