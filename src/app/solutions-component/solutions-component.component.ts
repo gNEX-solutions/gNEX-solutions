@@ -9,21 +9,36 @@ import { SolutionsList } from '../models/SolutionsList';
 export class SolutionsComponentComponent implements OnInit {
 
   solutionsList:SolutionsList[];
+  public show:boolean = false;
+  public buttonName:any = 'Show';
+
   constructor() { }
 
   ngOnInit() {
     this.solutionsList = [
       {
-        id: 1,
+        id: 0,
         header: "Web designing and development",
-        description: "Sample content"
+        description: "Sample content",
+        status: 0
       },
       {
-        id: 2,
+        id: 1,
         header: "Mobile app development",
-        description: "Sample content2"
+        description: "Sample content2",
+        status: 0
       },
     ]
   }
-
+  
+  toggle(id:number) {
+    
+    if(this.solutionsList[id].status == 0){
+     this.solutionsList[id].status = 1;
+    }
+    else{
+      this.solutionsList[id].status = 0;
+     }
+    
+  }
 }
