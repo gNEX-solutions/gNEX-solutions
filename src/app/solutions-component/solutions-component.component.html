@@ -1,23 +1,29 @@
-<div class="container">
+<div class="container-fluid solutions-card">
     <div class="row">
-      <div class="col-12 col-sm-12 col-lg-12">
-        <div class="card">
-          <div class="card-header">
-            <h1>Solutions</h1>
-          </div>
+      <div class="col-sm-12 col-md-2 col-lg-2 rotate-title">
+        <br><br><br><br><br><br><br><h1 class="title">Solutions</h1>
+      </div>
+      <div class="col-md-10 col-sm-12 col-lg-10">
+        <div class="card col-md-10 col-md-offset-2">
           <div class="card-body">
             <ul class="list-group" *ngFor="let list of solutionsList">
-              <li class="solutions-list list-group-item" type="button" data-toggle="collapse" data-target="#collapseList" aria-expanded="false" aria-controls="collapseList">
-                {{ list.header }}
-                <div class="collapse" id="collapseList">
-                  <div class="card card-body">
-                    {{ list.description }}
+              <li (click)="toggle( list.id )" id="{{ list.id }}" class="solutions-list list-group-item" type="button" data-toggle="collapse" data-target="#collapseList" aria-expanded="false" aria-controls="collapseList">
+                <div class="list-header">{{ list.header }}</div>
+                <ng-container *ngIf="list.status == 1">
+                  <div class="list-description">
+                      <div>
+                        {{ list.description }}
+                      </div>
                   </div>
-                </div>
+              </ng-container>
               </li>
             </ul>
+            <div class="pricing col-md-7 col-md-offset-5">
+              <a routerLink="/pricing" class="pricing-text">See Pricing <i class="fa fa-caret-right" style="font-size:24px"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
