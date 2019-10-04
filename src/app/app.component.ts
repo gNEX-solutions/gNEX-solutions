@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -10,10 +9,20 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export class AppComponent {
   title = 'gnexsolutions';
   faCoffee = faCoffee;
-  router: string;
 
-  constructor(private _router: Router) {
-          this.router = _router.url;
-    }
+  ngOnInit() {
+    this.loadScript('../assets/js/portfolio.js');
+  }
+
+  public loadScript(url: string) {
+    const body = document.body as HTMLDivElement;
+    const script = document.createElement('script');
+    script.innerHTML = '';
+    script.src = url;
+    script.async = false;
+    script.defer = true;
+    body.appendChild(script);
+  }
 
 }
+
