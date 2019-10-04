@@ -14,6 +14,8 @@
 .pricing{
     text-align: right;
     padding-bottom: 20px;
+    margin-top:80px;
+    z-index: 1;
 }
 .pricing-text{
     color: white;
@@ -22,7 +24,7 @@
     font-size: 20px;
 }
 .card{
-    margin-top: 10%;
+    margin-top: 40px;
 }
 .card-body{
     align-content: center;
@@ -32,7 +34,8 @@
     margin-bottom: 20px;
 }
 .rotate-title{
-    background-color: rgb(30, 148, 56);
+    background-color:rgb(50, 161, 58);  
+    /* #3cb879; */
     margin-top:0%;
     text-align: center;
 }
