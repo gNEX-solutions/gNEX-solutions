@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PopupComponent } from './popup/popup.component';
 import { PricingComponentComponent } from './pricing-component/pricing-component.component';
+import { FacebookModule } from 'ngx-facebook';
 
 @NgModule({
   declarations: [
@@ -36,11 +37,11 @@ import { PricingComponentComponent } from './pricing-component/pricing-component
     TeamcardsComponentComponent,
     HomePortfolioComponent,
     PopupComponent,
-    PricingComponentComponent,
+    PricingComponentComponent
   ],
   imports: [
     BrowserModule, CarouselModule,FontAwesomeModule,FormsModule,BrowserModule,HttpClientModule,
-    AppRoutingModule, NgbModule, CarouselModule.forRoot()
+    AppRoutingModule, NgbModule, CarouselModule.forRoot(),FacebookModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent, HomeCarousalComponentComponent]

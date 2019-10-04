@@ -1,5 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
 import * as $ from 'jquery';
+import { stringify } from '@angular/compiler/src/util';
 
 @Component({
   selector: 'app-popup',
@@ -9,7 +10,7 @@ import * as $ from 'jquery';
 export class PopupComponent implements OnInit {
 
   @Input()
-  itaration_val: number;
+  itaration_val: string;
   @Input()
   header: string;
   @Input()
@@ -18,20 +19,14 @@ export class PopupComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // alert(this.itaration_val);
-
     }
 
     addclass(k:string){
-      // document.getElementById(k).classList.add('expand');
       $('#'+k).toggleClass('expand');
       document.getElementById(this.xx).setAttribute("style","z-index:1");
     }
 
     removeclass(k:string){
-      // alert(document.getElementById(k));
-      // document.getElementById(k).setAttribute("style","background:#ffffff");
-      // document.getElementById(k).classList.remove('expand');
       $('#'+k).toggleClass('expand');
       event.stopPropagation();
       document.getElementById(this.xx).setAttribute("style","z-index:1");
