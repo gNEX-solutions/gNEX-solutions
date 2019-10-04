@@ -1,6 +1,6 @@
 
 <div class="row">
-  <div class="email"  id="{{itaration_val}}" (click)="circle_plus([itaration_val])"  (click)="addclass([itaration_val])" [style.top.px]="70*[itaration_val]">
+  <div class="email"  id="{{itaration_val}}" (click)="circle_plus(itaration_val)"  (click)="addclass(itaration_val)" [style.top.px]="70*itaration_val">
     <div class="from">
       <div class="from-contents">
         <!-- <div class="avatar me"></div> -->
@@ -8,7 +8,7 @@
         </div>
       </div>
     </div>
-    <div class="circle-plus closed"  id="circle-plus_{{itaration_val}}" (click)="circle_plus([itaration_val])" (click)="removeclass([itaration_val])">
+    <div class="circle-plus closed"  id="circle-plus_{{itaration_val}}" (click)="circle_plus(itaration_val)" (click)="removeclass(itaration_val)">
       <div class="circle" >
         <div class="horizontal"></div>
         <div class="vertical"></div>

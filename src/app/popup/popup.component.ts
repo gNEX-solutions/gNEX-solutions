@@ -10,7 +10,7 @@ import { stringify } from '@angular/compiler/src/util';
 export class PopupComponent implements OnInit {
 
   @Input()
-  itaration_val: string;
+  itaration_val: any;
   @Input()
   header: string;
   @Input()
