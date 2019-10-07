@@ -1,6 +1,6 @@
 
 <div class="row">
-  <div class="email"  id="{{itaration_val}}" (click)="circle_plus(itaration_val)"  (click)="addclass(itaration_val)" [style.top.px]="70*itaration_val">
+  <div class="email"  id="{{itaration_val}}" (click)="circle_plus(itaration_val)"  (click)="addclass(itaration_val)" [style.top.px]="20*itaration_val">
     <div class="from">
       <div class="from-contents">
         <!-- <div class="avatar me"></div> -->
@@ -27,9 +27,8 @@
           </div> -->
         </div>
         <div class="bottom">
-          <div class="row">
-            <img src="./assets/img/angular.png">
-              <p>{{description}}</p>
+          <div class="col">
+           <div class="col-md-10">  <p><img src="./assets/img/angular.png"> {{description}}</p></div>
           </div>
         </div>
       </div>

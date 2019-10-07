@@ -36,8 +36,9 @@
 .solutions-card{
     background-color:  rgb(96, 186, 70);
     margin-bottom: 20px;
-    width: 103vw;
-    margin-left:-5vw;
+    position: relative;
+    left:-50px;
+    width:100vw;
     /* position: absolute;
     left:0px; */
 }
@@ -58,4 +59,23 @@
     -ms-transform: rotate(-90deg); /* IE 9 */
     -webkit-transform: rotate(-90deg); /* Safari 3-8 */
     transform: rotate(-90deg);
+}
+
+
+
+@media screen and (max-width:992px) {
+
+    .title{
+        transform: none;
+        padding:0px;
+        padding-bottom:50px;
+        margin-top:-80px;
+    }
+    .solutions-card{
+        background-color:  rgb(96, 186, 70);
+        margin-bottom: 20px;
+        position: relative;
+        left:-50px;
+        width:100vw;
+    }
 }

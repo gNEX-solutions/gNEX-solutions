@@ -36,7 +36,7 @@
   height:80px;
   position: absolute;
   top:0;
-  left: -200px !important;
+  left: -100px !important;
   }
 
   .navbar{
@@ -130,7 +130,7 @@
       top:17px;
       position: fixed;
       padding: 25px 20px 0!important;
-      z-index:9999 !important;
+      z-index:99999 !important;
     }
     
     .menu-trigger-icon:hover div{
@@ -186,11 +186,11 @@
       }
       .menu-trigger {
         display:block !important;
-
+        margin-right: 20px;
 
       }
       .menu-trigger>i{
-        z-index:9999 !important;
+        z-index:99999 !important;
       }
 
       .navbar ul li {
