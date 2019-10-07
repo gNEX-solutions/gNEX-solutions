@@ -1,3 +1,7 @@
+.solutions-card{
+    margin-top:70px;
+}
+
 .solutions-list{
     list-style-type: none;
     cursor: pointer;
@@ -14,7 +18,7 @@
 .pricing{
     text-align: right;
     padding-bottom: 20px;
-    margin-top:80px;
+    margin-top:60px;
     z-index: 1;
 }
 .pricing-text{
@@ -24,14 +28,18 @@
     font-size: 20px;
 }
 .card{
-    margin-top: 40px;
+    margin-top: 5vw;
 }
 .card-body{
-    align-content: center;
+
 }
 .solutions-card{
     background-color:  rgb(96, 186, 70);
     margin-bottom: 20px;
+    width: 103vw;
+    margin-left:-5vw;
+    /* position: absolute;
+    left:0px; */
 }
 .rotate-title{
     background-color:rgb(50, 161, 58);  
