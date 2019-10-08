@@ -21,6 +21,7 @@ import { PopupComponent } from './popup/popup.component';
 import { PricingComponentComponent } from './pricing-component/pricing-component.component';
 import { FacebookModule } from 'ngx-facebook';
 import { AboutusVisionMissionComponenetComponent } from './aboutus-vision-mission-componenet/aboutus-vision-mission-componenet.component';
+import { AboutusSliderComponenetComponent } from './aboutus-slider-componenet/aboutus-slider-componenet.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { AboutusVisionMissionComponenetComponent } from './aboutus-vision-missio
     HomePortfolioComponent,
     PopupComponent,
     PricingComponentComponent,
-    AboutusVisionMissionComponenetComponent
+    AboutusVisionMissionComponenetComponent,
+    AboutusSliderComponenetComponent
   ],
   imports: [
     BrowserModule, CarouselModule,FontAwesomeModule,FormsModule,BrowserModule,HttpClientModule,

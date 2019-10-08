@@ -1,3 +1,5 @@
+
+
 .solutions-list{
     list-style-type: none;
     cursor: pointer;
@@ -13,8 +15,8 @@
 }
 .pricing{
     text-align: right;
-    padding-bottom: 20px;
-    margin-top:80px;
+    padding-bottom: 0px;
+    margin-top:100px;
     z-index: 1;
 }
 .pricing-text{
@@ -24,30 +26,57 @@
     font-size: 20px;
 }
 .card{
-    margin-top: 40px;
+    margin-top: 5vw;
 }
 .card-body{
-    align-content: center;
+
 }
 .solutions-card{
     background-color:  rgb(96, 186, 70);
     margin-bottom: 20px;
+    position: relative;
+    left:-50px;
+    top:80px;
+    width:100vw;
+    /* position: absolute;
+    left:0px; */
 }
 .rotate-title{
     background-color:rgb(50, 161, 58);  
     /* #3cb879; */
     margin-top:0%;
+    height: 100%;
     text-align: center;
 }
 .title{
     font-weight: 700; 
     font-family: 'Montserrat', sans-serif !important;
     font-size:50px;
-    padding:60% 10%;
+    padding:100% 10px;
     text-align: center;
     text-transform: uppercase;
     color: white;
     -ms-transform: rotate(-90deg); /* IE 9 */
     -webkit-transform: rotate(-90deg); /* Safari 3-8 */
     transform: rotate(-90deg);
+}
+
+
+
+@media screen and (max-width:992px) {
+
+    .title{
+        transform: none;
+        padding:0px;
+        padding-bottom:50px;
+        margin-top:-80px;
+    }
+    .solutions-card{
+        background-color:  rgb(96, 186, 70);
+        margin-bottom: 20px;
+        position: relative;
+        left:-50px;
+        padding-bottom: 50px;
+        width:100vw;
+    }
 }

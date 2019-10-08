@@ -1,18 +1,10 @@
-/* Tiny reset thingy */
-body,
-html {
-  margin: 0;
-  padding: 0;
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-}
-/* 
 .aboutusTitle{
     font-size:150px;
     padding:30px 0px;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-} */
+}
 
 
 @media screen and (max-width:1050px) {
@@ -43,6 +35,19 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: scroll;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
+  
+
+}
 
 .section {
   /* Needed for children to be absolutely positioned relative to the parent. */
@@ -60,7 +65,7 @@ html {
 
 /* The styling for the static div. */
 .static {
- background-color: rgb(96, 186, 70);
+ background-color: #60ba46;
  height: auto;
  padding-bottom: 10%;
  padding-top: 5%;

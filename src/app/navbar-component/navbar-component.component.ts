@@ -47,7 +47,21 @@ export class NavbarComponentComponent implements OnInit {
          }
 
       });   // end resize
+
+      var menu_trigger = document.getElementById("menu-trigger");
+
+      window.onscroll = function() {
+        var scrollTop = $(window).scrollTop();
+        if(scrollTop>12){
+          menu_trigger.style.top = "-12px ";
+        }
+        else{
+          menu_trigger.style.top = "17px ";
+        }
+      };
+  
     });   // end ready
+
 
   }
 
