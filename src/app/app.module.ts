@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PopupComponent } from './popup/popup.component';
 import { PricingComponentComponent } from './pricing-component/pricing-component.component';
 import { FacebookModule } from 'ngx-facebook';
+import { AboutusVisionMissionComponenetComponent } from './aboutus-vision-mission-componenet/aboutus-vision-mission-componenet.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FacebookModule } from 'ngx-facebook';
     TeamcardsComponentComponent,
     HomePortfolioComponent,
     PopupComponent,
-    PricingComponentComponent
+    PricingComponentComponent,
+    AboutusVisionMissionComponenetComponent
   ],
   imports: [
     BrowserModule, CarouselModule,FontAwesomeModule,FormsModule,BrowserModule,HttpClientModule,
