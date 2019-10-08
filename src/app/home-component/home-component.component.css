@@ -2,7 +2,12 @@
 .home-main{
     
 }
-
+.banner img{
+  position: relative;
+  left:-50px;
+  width:100vw;
+  margin-top:130px;
+}
 .next-section-button img{
     width: 80px;
     height:auto;
