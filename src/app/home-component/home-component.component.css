@@ -1,4 +1,42 @@
-.home-main{
 
+.home-main{
+    
 }
 
+.next-section-button img{
+    width: 80px;
+    height:auto;
+    position: fixed;
+    z-index:9999;
+    right:50px;
+    top:40vw;
+    -webkit-animation: sdb05 1.5s infinite;
+    animation: sdb05 1.5s infinite;
+}
+
+@-webkit-keyframes sdb05 {
+    0% {
+      -webkit-transform:  translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translate(0px, 20px);
+      opacity: 0;
+    }
+  }
+  @keyframes sdb05 {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform:translate(0px, 20px);
+      opacity: 0;
+    }
+  }
