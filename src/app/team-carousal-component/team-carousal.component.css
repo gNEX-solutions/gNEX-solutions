@@ -9,9 +9,24 @@
     left:-50px;
     margin-bottom:-110px;
     width:100vw;
-
 }
 
+.testimonial {
+    background-image: url("/assets/img/home/quote.png"),url("/assets/img/home/quote_r.png");
+    background-position: left top, right bottom 0px;
+    background-size: inherit auto;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 100;
+    margin: 7px auto;
+    padding: 0 8% 5px;
+    width: 90%;
+}
 .aboutusTitle{
     font-size:50px;
     padding:0px 0px;
@@ -32,9 +47,9 @@
     width: 100%;
 }
 .carousel-img{
-    margin-top:50px;
     margin-bottom:auto;
     display: flex;
+    top: 2.7vw;
 }
 
 .carousel-box{
@@ -49,7 +64,7 @@
 
 .carousel-title1{
     text-transform: uppercase;
-    font-size:30px;
+    font-size:24px;
     font-weight: bold;
     margin-right: -20px;
 }
@@ -59,7 +74,7 @@
 }
 .carousel-title2{
     font-weight: lighter;
-    font-size: 24px;
+    font-size: 15px;
 }
 
 .carousel-text{
@@ -71,8 +86,8 @@
 }
 
 .align-bottom{
-    margin-left:50px;
-    margin-top:-25px;
+    margin-left:120px;
+    margin-top:10px;
     padding-bottom:20px;
 }
 
@@ -92,6 +107,22 @@
     .aboutusTitle2{
         padding:30px;
     }
+
+    .align-bottom{
+        margin-left:150px;
+        margin-top:30px;
+    }
+
+    .carousel-img img{
+
+    }
     
+}
+@media screen and (max-width:996px) {
+    .testimonial {
+        padding: 0 15% 5px;
+
+    }
+
 }
 

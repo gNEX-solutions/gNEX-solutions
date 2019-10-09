@@ -44,8 +44,7 @@ export class HomeComponentComponent implements OnInit {
   scroll = (): void => {
     var next_ection_button = document.getElementById("next-section-button");
     var scrollTop = $(window).scrollTop();
-
-    console.log(scrollTop);
+    
     if(scrollTop>=0 && scrollTop<630 ){
       this.hrefLink ="home-solutions";
       next_ection_button.style.webkitAnimation ="sdb05 1.5s infinite";
