@@ -42,6 +42,7 @@
   .navbar{
     -webkit-clip-path: polygon(30px 0%, 100% 0, 100% 100%, 30px  100%, 0% 50%);
     background-color: rgb(96, 186, 70);
+    /* #1e7152  */
     height:80px;
     width: 100%;
     -webkit-animation-name: anim1; /* Safari 4.0 - 8.0 */

@@ -32,7 +32,9 @@
 
 }
 .solutions-card{
-    background-color:  rgb(96, 186, 70);
+    background-color:  rgb(95, 186, 70);
+    background:url('/assets/img/home/desk1.jpg') no-repeat fixed center;
+    background-size: 100% auto;
     margin-bottom: 20px;
     position: relative;
     left:-50px;
@@ -42,7 +44,7 @@
     left:0px; */
 }
 .rotate-title{
-    background-color:rgb(50, 161, 58);  
+    background-color:#2d9751;  
     /* #3cb879; */
     margin-top:0%;
     height: 100%;
@@ -64,7 +66,11 @@
 
 
 @media screen and (max-width:992px) {
+    .solutions-card{
 
+        background-size: auto 100%;
+    
+    }
     .title{
         transform: none;
         padding:0px;
