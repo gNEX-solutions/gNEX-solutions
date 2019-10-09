@@ -92,3 +92,23 @@
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+
+.carousel-indicators li {
+  background-color:  #47d147; 
+  width : 16px;
+  height : 16px;
+  margin: 4px;  
+}
+.carousel-indicators .active {
+  background-color:  #006600;
+  width : 16px;
+  height : 16px;  
+  margin: 4px;   
+}
+.carousel-indicators {
+  bottom: -50px;
+}
+
+/* .carousel-caption h5{
+  font-size:50px;
+} */
