@@ -15,7 +15,19 @@
     color: #47d147;
 }
 
+.carousel-control{
+  background: none;
+}
+.carousel{
+  width:80%;
+  margin: 0% auto;
+}
+.img-responsive{
 
+}
+.item{
+  height:300px !important;
+}
 .col4 {width: 33.33333333%; float: left; position: relative;}
 .transition {-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease;  transition: all .5s ease;}
 .fx1 .item, .fx2 .item, .fx3 .item, .fx4 .item, .fx5 .item {margin: 10px 0;}
@@ -51,6 +63,7 @@
 
 .arrow {
   position: relative;
+  text-decoration: underline;
   transition: all .5s ease;
   padding: .5em;
   display: inline-block;
