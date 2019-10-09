@@ -72,7 +72,9 @@
 
 @media screen and (max-width: 580px) {
 .col4 {width: 100%;}
-
+.arrow {
+margin-top:50px;
+}
 } 
 
 .arrow {
