@@ -22,6 +22,7 @@ import { PricingComponentComponent } from './pricing-component/pricing-component
 import { FacebookModule } from 'ngx-facebook';
 import { AboutusVisionMissionComponenetComponent } from './aboutus-vision-mission-componenet/aboutus-vision-mission-componenet.component';
 import { AboutusSliderComponenetComponent } from './aboutus-slider-componenet/aboutus-slider-componenet.component';
+import { PricingWebComponentComponent } from './pricing-web-component/pricing-web-component.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { AboutusSliderComponenetComponent } from './aboutus-slider-componenet/ab
     PopupComponent,
     PricingComponentComponent,
     AboutusVisionMissionComponenetComponent,
-    AboutusSliderComponenetComponent
+    AboutusSliderComponenetComponent,
+    PricingWebComponentComponent,
   ],
   imports: [
     BrowserModule, CarouselModule,FontAwesomeModule,FormsModule,BrowserModule,HttpClientModule,
