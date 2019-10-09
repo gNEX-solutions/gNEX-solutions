@@ -24,6 +24,7 @@ import { AboutusVisionMissionComponenetComponent } from './aboutus-vision-missio
 import { AboutusSliderComponenetComponent } from './aboutus-slider-componenet/aboutus-slider-componenet.component';
 import { PricingWebComponentComponent } from './pricing-web-component/pricing-web-component.component';
 import { PricingBrandingComponentComponent } from './pricing-branding-component/pricing-branding-component.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,7 @@ import { PricingBrandingComponentComponent } from './pricing-branding-component/
   ],
   imports: [
     BrowserModule, CarouselModule,FontAwesomeModule,FormsModule,BrowserModule,HttpClientModule,
-    AppRoutingModule, NgbModule, CarouselModule.forRoot(),FacebookModule.forRoot()
+    AppRoutingModule, NgbModule, CarouselModule.forRoot(),FacebookModule.forRoot(),AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent, HomeCarousalComponentComponent]
