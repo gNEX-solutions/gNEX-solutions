@@ -1,34 +1,33 @@
-.aboutusTitle{
-    font-size:150px;
-    padding:30px 0px;
+.aboutusTitle {
+    font-size: 150px;
+    padding: 30px 0px;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-
 @media screen and (max-width:1050px) {
-  .ourPeopleTitle{
-    font-size:30px !important;
-  }
-  .aboutusTitle2{
-    font-size:16px !important;
-    padding:10px 36px !important;
-  }
+    .ourPeopleTitle {
+        font-size: 30px !important;
+    }
+    .aboutusTitle2 {
+        font-size: 16px !important;
+        padding: 10px 36px !important;
+    }
 }
 
-.ourPeopleTitle{
-    font-size:80px;
-    padding:30px 0px;
+.ourPeopleTitle {
+    font-size: 80px;
+    padding: 30px 0px;
     text-align: center;
     text-shadow: none;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.aboutusTitle2{
-    font-size:32px;
-    padding:10px 300px;
+.aboutusTitle2 {
+    font-size: 32px;
+    padding: 10px 300px;
     text-align: justify;
     font-weight: lighter;
     text-shadow: none;
@@ -36,38 +35,36 @@
 }
 
 .wrapper {
-  /* The height needs to be set to a fixed value for the effect to work.
+    /* The height needs to be set to a fixed value for the effect to work.
    * 100vh is the full height of the viewport. */
-  height: 100vh;
-  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-  overflow-x: hidden;
-  /* Enable scrolling on the page. */
-  overflow-y: scroll;
-  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px;
-  
-
+    height: 100vh;
+    /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+    overflow-x: hidden;
+    /* Enable scrolling on the page. */
+    overflow-y: scroll;
+    /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+    perspective: 2px;
 }
 
 .section {
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
-
-  /* For text formatting. */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 100vh;
+    /* For text formatting. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
 }
+
 
 /* The styling for the static div. */
-.static {
- background-color: #60ba46;
- height: auto;
- padding-bottom: 10%;
- padding-top: 5%;
-}
 
+.static {
+    background-color: #60ba46;
+    height: auto;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}

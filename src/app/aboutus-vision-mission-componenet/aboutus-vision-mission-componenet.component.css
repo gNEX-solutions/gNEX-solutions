@@ -1,41 +1,52 @@
-svg{
+.container {
+    text-align: center;
+}
+
+.svginit {
+    /* display: inline-block; */
     width: 100%;
     height: 100%;
-  }
-  
-  svg path:hover {
-  transition-duration: 1.5s;
-        fill: #00bb2f;
-      }
-      
-      text{
-    display:none;
-    fill:#fff;
-    font-size:3em;
-    font-family:arial;
-  pointer-events:none;
-  }
-  
-  text.sub-mission{
-    display:none;
-    fill:#fff;
-    font-size:0.9em;
-    font-family:arial;
-  pointer-events:none;
-  }
-  
-  text.sub-text{
-    display:none;
-    fill:#fff;
-    font-size:1.2em;
-    font-family:arial;
-  pointer-events:none;
-  }
-  
-  g > text{
-    display:block;
-  }
-  
-  g:hover > text{
-    display:block;
-  }
+    margin: 0 auto;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+svg path:hover {
+    transition-duration: 1.5s;
+    fill: #00bb2f;
+}
+
+text {
+    display: none;
+    fill: #fff;
+    font-size: 3em;
+    font-family: arial;
+    pointer-events: none;
+}
+
+text.sub-mission {
+    display: none;
+    fill: #fff;
+    font-size: 0.9em;
+    font-family: arial;
+    pointer-events: none;
+}
+
+text.sub-text {
+    display: none;
+    fill: #fff;
+    font-size: 1.2em;
+    font-family: arial;
+    pointer-events: none;
+}
+
+g>text {
+    display: block;
+}
+
+g:hover>text {
+    display: block;
+}
