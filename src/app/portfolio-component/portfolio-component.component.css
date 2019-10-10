@@ -3,7 +3,14 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css";
 @import "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
 
-
+.portfoliotitle{
+  font-size:50px;
+  padding:30px 0px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #47d147;
+}
 .animcontainer{
   height: 450px; 
   position:relative;
@@ -697,26 +704,26 @@ p {
   }
   
   .study1 {
-    background-image: url("http://www.livingfengshui.ca/wp-content/uploads/2014/01/unsplash-contemplative.jpg");
+    background-image: url("/assets/img/portfolio/cees.jpg");
   }
   
   .study2 {
-    background-image: url("http://imgs.abduzeedo.com/files/paul0v2/unsplash/unsplash-04.jpg");
+    background-image: url("/assets/img/portfolio/cees.jpg");
   }
   
   .study3 {
-    background-image: url("http://415vince.com/wp-content/uploads/2014/07/unsplash-mts.jpg");
+    background-image: url("/assets/img/portfolio/cees.jpg");
   }
   
   .study4 {
-    background-image: url("https://41.media.tumblr.com/8d41610b4f5e7d5b68e4430b736fbeb3/tumblr_n4vbj2Vv8h1st5lhmo1_1280.jpg");
+    background-image: url("/assets/img/portfolio/cees.jpg");
   }
   
   .study5 {
-    background-image: url("http://publicdomainarchive.com/wp-content/uploads/2014/06/public-domain-images-free-stock-photos-high-quality-resolution-downloads-unsplash0067-1000x666.jpg");
+    background-image: url("/assets/img/portfolio/cees.jpg");
   }
   
   .study6 {
-    background-image: url("http://www.bedlammag.com/wp-content/uploads/2014/04/unsplash-love-yourself-article-e1397699812178.jpg");
+    background-image: url("/assets/img/portfolio/cees.jpg");
   }
   
