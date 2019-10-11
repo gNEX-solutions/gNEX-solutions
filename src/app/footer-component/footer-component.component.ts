@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient,HttpParams, HttpHeaders } from '@angular/common/http';
 
-
 @Component({
   selector: 'app-footer-component',
   templateUrl: './footer-component.component.html',
@@ -16,7 +15,7 @@ export class FooterComponentComponent implements OnInit {
   phone:string;
   error:string;
 
-  constructor(private  httpClient:HttpClient) { }
+  constructor(private  httpClient:HttpClient) {}
 
   ngOnInit() {
   }
@@ -27,16 +26,16 @@ export class FooterComponentComponent implements OnInit {
 
     // alert('Your name is'+ this.name);
     if(this.name == undefined){
-       this.error = "please fill the fields with *";
+       this.error = "Please enter your name";
       } 
     else if(this.email == undefined){
-        this.error = "please fill the fields with *";
+        this.error = "Please enter your email address";
       } 
     else if(this.message == undefined){
-       this.error = "please fill the fields with *";
+       this.error = "Please type the message before you send *";
       } 
     else{
-
+    
       this.error = "";
 
       let httpOptions = {
