@@ -1,5 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
 import * as $ from 'jquery';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home-component',
@@ -11,7 +12,7 @@ export class HomeComponentComponent implements OnInit {
   @Input()
   hrefLink: any;
   
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.hrefLink ="home-solutions";

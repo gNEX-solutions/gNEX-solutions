@@ -1,14 +1,29 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 
+import { Injectable } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
+
+
 @Component({
   selector: 'app-navbar-component',
   templateUrl: './navbar-component.component.html',
   styleUrls: ['./navbar-component.component.css']
 })
+
+@Injectable({
+  providedIn: 'root'
+})
 export class NavbarComponentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private meta: Meta) { 
+    
+    this.meta.addTag({name:'description', content:'gNEX Solutions'});
+    this.meta.addTag({name: 'author', content: 'gNEX Solutions'}); 
+    this.meta.addTag({name: 'keywords', content: 'IT Solutions, Innovation, Design, Develop'});
+    this.meta.addTag({property: 'og:title', content: "gNEX Solutions"}); 
+    this.meta.addTag({property: 'og:type', content: "website"});  
+  }
 
   public openNav(){
    var wid = document.getElementById("mySidenav").style.width;
