@@ -28,6 +28,7 @@ export class SolutionsComponentComponent implements OnInit {
     this.meta.addTag({property: 'og:type', content: "website"});  
    }
 
+  
   ngOnInit() {
     this.solutionsList = [
       {
