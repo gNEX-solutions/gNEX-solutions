@@ -8,10 +8,10 @@ import { PricingComponentComponent } from './pricing-component/pricing-component
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponentComponent},
+  {path: 'home', component: HomeComponentComponent, data: {animation: 'FilterPage'}},
   {path: 'portfolio', component: PortfolioComponentComponent},
-  {path: 'solutions', component: SolutionsComponentComponent},
-  {path: 'aboutus', component: AboutusComponentComponent},
+  {path: 'solutions', component: SolutionsComponentComponent, data: {animation: 'isLeft'}},
+  {path: 'aboutus', component: AboutusComponentComponent, data: {animation: 'isRight'}},
   {path: 'pricing', component: PricingComponentComponent}
 ];
 

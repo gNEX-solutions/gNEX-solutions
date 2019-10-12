@@ -1,17 +1,20 @@
 import { Component, OnInit,Input } from '@angular/core';
 import * as $ from 'jquery';
 
+
 @Component({
   selector: 'app-home-component',
   templateUrl: './home-component.component.html',
-  styleUrls: ['./home-component.component.css']
+  styleUrls: ['./home-component.component.css'],
 })
 export class HomeComponentComponent implements OnInit {
   
   @Input()
   hrefLink: any;
   
-  constructor() { }
+  constructor() { 
+   
+  }
 
   ngOnInit() {
     this.hrefLink ="home-solutions";

@@ -25,6 +25,7 @@ import { AboutusSliderComponenetComponent } from './aboutus-slider-componenet/ab
 import { PricingWebComponentComponent } from './pricing-web-component/pricing-web-component.component';
 import { PricingBrandingComponentComponent } from './pricing-branding-component/pricing-branding-component.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -49,8 +50,9 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     PricingBrandingComponentComponent,
   ],
   imports: [
-    BrowserModule, CarouselModule,FontAwesomeModule,FormsModule,BrowserModule,HttpClientModule,
-    AppRoutingModule, NgbModule, CarouselModule.forRoot(),FacebookModule.forRoot(),AngularFontAwesomeModule
+    BrowserModule, CarouselModule,FontAwesomeModule,FormsModule,HttpClientModule,
+    AppRoutingModule, NgbModule, CarouselModule.forRoot(),FacebookModule.forRoot(),AngularFontAwesomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent, HomeCarousalComponentComponent]

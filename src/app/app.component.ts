@@ -1,21 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { FacebookService, InitParams } from 'ngx-facebook';
+import { RouterOutlet } from '@angular/router';
+import { slideInAnimation } from './transition';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  animations: [
+    slideInAnimation
+  ]
 })
 export class AppComponent {
   title = 'gnexsolutions';
   faCoffee = faCoffee;
+
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+  }
+  
 
   constructor(private facebookService: FacebookService) { }
 
   ngOnInit() {
     this.loadScript('../assets/js/portfolio.js');
     this.initFacebookService();
+
   }
 
   private initFacebookService(): void {
@@ -32,6 +43,6 @@ export class AppComponent {
     script.defer = true;
     body.appendChild(script);
   }
-
+  
 }
 
