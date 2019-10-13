@@ -20,10 +20,10 @@ export const slideInAnimation =
       query(':enter, :leave', [
         style({
           position: 'absolute',
-          'z-index':9999,
+          'z-index':0,
           // background:'#e02500',
-          top: 0,
-          left: 0,
+          top:0,
+          left:0,
           width: '100vw',
         })
       ]),
