@@ -20,11 +20,11 @@
 
             <div class="nav-container col-md-12">
                 <ul>
-                    <li class="col-md-2"><a routerLink="/footer">CONTACT</a></li>
-                    <li class="col-md-2"><a routerLink="/aboutus">ABOUT US</a></li>
-                    <li class="col-md-2"><a routerLink="/portfolio" routerLinkActive="active">PORTFOLIO</a></li>
-                    <li class="col-md-2"><a routerLink="/solutions">SOLUTIONS</a></li>
-                    <li class="col-md-2"><a routerLink="/home">HOME</a></li>
+                    <li class="col-md-2"><a id="CONTACT" (click)="navBarFunc('CONTACT')" routerLink="/footer">CONTACT</a></li>
+                    <li class="col-md-2"><a id="ABOUT" (click)="navBarFunc('ABOUT')" routerLink="/aboutus">ABOUT US</a></li>
+                    <li class="col-md-2"><a id="PORTFOLIO"(click)="navBarFunc('PORTFOLIO')" routerLink="/portfolio" routerLinkActive="active">PORTFOLIO</a></li>
+                    <li class="col-md-2"><a id="SOLUTIONS" (click)="navBarFunc('SOLUTIONS')" routerLink="/solutions">SOLUTIONS</a></li>
+                    <li class="col-md-2"><a id="HOME" (click)="navBarFunc('HOME')" routerLink="/home">HOME</a></li>
                 </ul>
             </div>
                     

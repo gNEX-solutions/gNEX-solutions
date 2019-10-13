@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import * as $ from 'jquery';
 
 @Component({
@@ -8,7 +9,7 @@ import * as $ from 'jquery';
 })
 export class NavbarComponentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   public openNav(){
    var wid = document.getElementById("mySidenav").style.width;
@@ -63,6 +64,17 @@ export class NavbarComponentComponent implements OnInit {
     });   // end ready
 
 
+  }
+
+  public navBarFunc(clickedButton:any){
+      var elements = document.getElementsByClassName('nav-container')[0].children[0].children;
+      for(var i=0;i<elements.length;i++){
+          var ele =  elements[i];
+          ele.firstElementChild.style.background= "unset";
+      }
+
+      var button = document.getElementById(clickedButton);
+      button.style.background= "rgb(34,133,87)";
   }
 
 }

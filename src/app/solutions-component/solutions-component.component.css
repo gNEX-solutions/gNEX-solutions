@@ -44,7 +44,9 @@
     left:0px; */
 }
 .rotate-title{
-    background-color:#2d9751;  
+    /* background-color:#2d9751;   */
+    background: rgb(41,124,153);
+background: linear-gradient(360deg, rgba(41,124,153,1) 0%, rgba(96,186,70,1) 100%);
     /* #3cb879; */
     margin-top:0%;
     height: 100%;
