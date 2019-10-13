@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { FacebookService, InitParams } from 'ngx-facebook';
 import { RouterOutlet } from '@angular/router';
-import { slideInAnimation } from './transition';
+import { slideInAnimation,fader  } from './transition';
 
 @Component({
   selector: 'app-root',

@@ -5,14 +5,17 @@ import { SolutionsComponentComponent } from './solutions-component/solutions-com
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { AboutusComponentComponent } from './aboutus-component/aboutus-component.component';
 import { PricingComponentComponent } from './pricing-component/pricing-component.component';
+import { FooterComponentComponent } from './footer-component/footer-component.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponentComponent, data: {animation: 'FilterPage'}},
-  {path: 'portfolio', component: PortfolioComponentComponent},
-  {path: 'solutions', component: SolutionsComponentComponent, data: {animation: 'isLeft'}},
-  {path: 'aboutus', component: AboutusComponentComponent, data: {animation: 'isRight'}},
-  {path: 'pricing', component: PricingComponentComponent}
+  {path: 'home', component: HomeComponentComponent, data: {animation: 'HomePage'}},
+  {path: 'portfolio', component: PortfolioComponentComponent, data: {animation: 'PortfolioPage'}},
+  {path: 'solutions', component: SolutionsComponentComponent, data: {animation: 'SolutionsPage'}},
+  {path: 'aboutus', component: AboutusComponentComponent, data: {animation: 'AboutPage'}},
+  {path: 'pricing', component: PricingComponentComponent, data: {animation: 'E'}},
+  {path: 'footer', component: FooterComponentComponent ,data: {animation: 'F'}}
+
 ];
 
 @NgModule({
