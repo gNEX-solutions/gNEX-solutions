@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { SolutionsList } from '../models/SolutionsList';
 
+import { Injectable } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
+
+@Injectable({
+  providedIn: 'root'
+})
+
 @Component({
   selector: 'app-solutions-component',
   templateUrl: './solutions-component.component.html',
@@ -12,8 +19,16 @@ export class SolutionsComponentComponent implements OnInit {
   public show:boolean = false;
   public buttonName:any = 'Show';
 
-  constructor() { }
+  constructor(private title: Title, private meta: Meta) {
+    this.title.setTitle('Solutions');
+    this.meta.addTag({name:'description', content:'gNEX Solutions'});
+    this.meta.addTag({name: 'author', content: 'gNEX Solutions'}); 
+    this.meta.addTag({name: 'keywords', content: 'Web designing and developmnet, Mobile app development, Graphic design, Brandig, Business automation'});
+    this.meta.addTag({property: 'og:title', content: "Solutions"}); 
+    this.meta.addTag({property: 'og:type', content: "website"});  
+   }
 
+  
   ngOnInit() {
     this.solutionsList = [
       {
