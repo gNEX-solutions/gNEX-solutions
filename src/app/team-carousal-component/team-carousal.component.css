@@ -1,7 +1,8 @@
 .aboutusBack{
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(96, 186, 70);
+    background: rgb(17,154,132);
+    background: linear-gradient(360deg, rgba(17,154,132,1) 0%, rgba(96,186,70,1) 100%, rgba(96,186,70,1) 100%);
     padding-bottom: 100px;
     padding-top:80px;
     position: relative;
@@ -54,7 +55,7 @@
 
 .carousel-box{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(45, 151, 81);
+    background-color: rgb(24, 109, 72);
     padding: 25px;  
     padding-left: 50px;    
     padding-right: 50px; 
@@ -103,14 +104,15 @@
     }
     .carousel-img img{
        padding:30px;
+       height:auto;
     }
     .aboutusTitle2{
         padding:30px;
     }
 
     .align-bottom{
-        margin-left:150px;
-        margin-top:30px;
+        margin: 0 auto;
+        margin-left: 50px;
     }
 
     .carousel-img img{

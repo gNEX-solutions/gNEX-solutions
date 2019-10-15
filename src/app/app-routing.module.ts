@@ -9,12 +9,13 @@ import { FooterComponentComponent } from './footer-component/footer-component.co
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponentComponent},
-  {path: 'portfolio', component: PortfolioComponentComponent},
-  {path: 'solutions', component: SolutionsComponentComponent},
-  {path: 'aboutus', component: AboutusComponentComponent},
-  {path: 'pricing', component: PricingComponentComponent},
-  {path: 'footer', component: FooterComponentComponent}
+  {path: 'home', component: HomeComponentComponent, data: {animation: 'HomePage'}},
+  {path: 'portfolio', component: PortfolioComponentComponent, data: {animation: 'PortfolioPage'}},
+  {path: 'solutions', component: SolutionsComponentComponent, data: {animation: 'SolutionsPage'}},
+  {path: 'aboutus', component: AboutusComponentComponent, data: {animation: 'AboutPage'}},
+  {path: 'pricing', component: PricingComponentComponent, data: {animation: 'E'}},
+  {path: 'footer', component: FooterComponentComponent ,data: {animation: 'F'}}
+
 ];
 
 @NgModule({

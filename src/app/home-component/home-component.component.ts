@@ -2,10 +2,11 @@ import { Component, OnInit,Input } from '@angular/core';
 import * as $ from 'jquery';
 import { Title, Meta } from '@angular/platform-browser';
 
+
 @Component({
   selector: 'app-home-component',
   templateUrl: './home-component.component.html',
-  styleUrls: ['./home-component.component.css']
+  styleUrls: ['./home-component.component.css'],
 })
 export class HomeComponentComponent implements OnInit {
   

@@ -1,6 +1,10 @@
 <section id="home-carousal"></section>
 <app-navbar-component></app-navbar-component>
-<router-outlet></router-outlet>
-<app-footer-component></app-footer-component>
+  <div [@routeAnimations]="prepareRoute(outlet)" class="content">
+    <router-outlet #outlet="outlet">
+    </router-outlet>
+  </div>
+
+
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
