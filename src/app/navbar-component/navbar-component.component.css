@@ -65,6 +65,13 @@
     height:80px;
   }
 
+  .not_selected{
+    background: unset !important;
+  }
+  .selected{
+    background: rgb(34,133,87) !important;
+  }
+
   .navbar {
       width: 100%;
 
@@ -80,7 +87,6 @@
     }
     
     .navbar a {
-
       font-family: 'Montserrat', sans-serif ;
       font-size:1.4vw;
       /* font-size:20px; */

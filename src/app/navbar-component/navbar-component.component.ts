@@ -17,18 +17,8 @@ import { Meta } from '@angular/platform-browser';
 })
 export class NavbarComponentComponent implements OnInit {
 
-<<<<<<< HEAD
-  constructor(private meta: Meta) { 
-    
-    this.meta.addTag({name:'description', content:'gNEX Solutions'});
-    this.meta.addTag({name: 'author', content: 'gNEX Solutions'}); 
-    this.meta.addTag({name: 'keywords', content: 'IT Solutions, Innovation, Design, Develop'});
-    this.meta.addTag({property: 'og:title', content: "gNEX Solutions"}); 
-    this.meta.addTag({property: 'og:type', content: "website"});  
-  }
-=======
+
   constructor(private router: Router) { }
->>>>>>> 099b7bfc4be8a79369c51a1fc7cfce630b833ca6
 
   public openNav(){
    var wid = document.getElementById("mySidenav").style.width;
@@ -89,11 +79,15 @@ export class NavbarComponentComponent implements OnInit {
       var elements = document.getElementsByClassName('nav-container')[0].children[0].children;
       for(var i=0;i<elements.length;i++){
           var ele =  elements[i];
-          ele.firstElementChild.style.background= "unset";
+          ele.firstElementChild.classList.remove("selected");
+          ele.firstElementChild.classList.add("not_selected");
+          // ele.firstElementChild.setAttribute("background", "unset !important");
+          // ele.firstElementChild.style.background = "unset";
       }
 
       var button = document.getElementById(clickedButton);
-      button.style.background= "rgb(34,133,87)";
+      // button.style.background= "rgb(34,133,87)";
+      button.classList.add("selected");
   }
 
 }
