@@ -298,14 +298,7 @@ html {
   box-sizing: inherit;
 }
 
-/* body {
-  font-size: 16px;
-  font-size: 1.6rem;
-  font-family: "Lato", sans-serif;
-  background: #FAFAFA;
-  height: 100%;
-  position: relative;
-} */
+
 
 a {
   color: #e74c3c;
@@ -582,15 +575,7 @@ p {
     }
   }
   
-  /* p {
-    margin: 0 auto 2rem;
-    text-align: center;
-    font-family: 'oswald';
-    font-size: 1.25rem;
-    color: #444;
-    font-weight: 100;
-    width: 90%;
-  } */
+
   @media screen and (min-width: 37.5em) {
     p {
       height: 70%;
