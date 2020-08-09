@@ -2,6 +2,12 @@
 .home-main{
   /* background-color:#1e7152 ; */
 }
+
+
+.banner{
+  position: relative;
+}
+
 .banner img:nth-child(1){
   position: relative;
   left:-50px;
@@ -10,12 +16,21 @@
 }
 
 .banner img:nth-child(2){
-  position: relative;
-  right:50px;
-  bottom:0px;
-  height:100%;
-  z-index:99;
+  position: absolute;
+  left: 15vw;
+  top: 90px;
+  height: 24vw;
+  z-index: 99;
 }
+
+.banner img:nth-child(3){
+  position: absolute;
+  right: 15vw;
+  top: 20px;
+  height: 25vw;
+  z-index: 1;
+}
+
 .next-section-button img{
     width: 80px;
     height:auto;
