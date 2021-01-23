@@ -1,5 +1,5 @@
 <section id="home-carousal"></section>
-<app-navbar-component></app-navbar-component>
+<app-navbar-component [sections]='{"solutions":"solutions_sec","portfolio":"portfolio_sec","contact":"contact_sec","aboutus":"aboutus_sec"}'></app-navbar-component>
   <div [@routeAnimations]="prepareRoute(outlet)" class="content">
     <router-outlet #outlet="outlet">
     </router-outlet>

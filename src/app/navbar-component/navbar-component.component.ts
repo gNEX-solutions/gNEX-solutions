@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
 
@@ -15,8 +15,11 @@ import { Meta } from '@angular/platform-browser';
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class NavbarComponentComponent implements OnInit {
 
+  @Input() sections:any
 
   constructor(private router: Router) { }
 

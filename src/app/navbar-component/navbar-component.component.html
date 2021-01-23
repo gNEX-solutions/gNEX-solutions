@@ -1,10 +1,10 @@
-    <div href="#" id="menu-trigger" class="menu-trigger" (click)="openNav()" >
-                <!-- <i class="fa fa-bars fa-4x" aria-hidden="true" ></i> -->
-                <div class="menu-trigger-icon" >
-                         <div class="menu-trigger-icon-1"></div>
-                         <div  class="menu-trigger-icon-2"></div>
-                         <div  class="menu-trigger-icon-3"></div>
-                </div>
+<div href="#" id="menu-trigger" class="menu-trigger" (click)="openNav()" >
+    <!-- <i class="fa fa-bars fa-4x" aria-hidden="true" ></i> -->
+    <div class="menu-trigger-icon" >
+                <div class="menu-trigger-icon-1"></div>
+                <div  class="menu-trigger-icon-2"></div>
+                <div  class="menu-trigger-icon-3"></div>
+    </div>
 </div>
 
 <div class="top">
@@ -18,10 +18,10 @@
 
             <div class="nav-container col-md-12">
                 <ul>
-                    <li class="col-md-2"><a id="CONTACT" (click)="navBarFunc('CONTACT')" routerLink="/footer">CONTACT</a></li>
-                    <li class="col-md-2"><a id="ABOUT" (click)="navBarFunc('ABOUT')" routerLink="/aboutus">ABOUT US</a></li>
-                    <li class="col-md-2"><a id="PORTFOLIO"(click)="navBarFunc('PORTFOLIO')" routerLink="/portfolio" routerLinkActive="active">PORTFOLIO</a></li>
-                    <li class="col-md-2"><a id="SOLUTIONS" (click)="navBarFunc('SOLUTIONS')" routerLink="/solutions">SOLUTIONS</a></li>
+                    <li class="col-md-2"><a id="CONTACT" (click)="navBarFunc('CONTACT')" href="#{{sections.contact}}">CONTACT</a></li>
+                    <li class="col-md-2"><a id="ABOUT" (click)="navBarFunc('ABOUT')" href="#{{sections.aboutus}}">ABOUT US</a></li>
+                    <li class="col-md-2"><a id="PORTFOLIO"(click)="navBarFunc('PORTFOLIO')"  href="#{{sections.portfolio}}">PORTFOLIO</a></li>
+                    <li class="col-md-2"><a id="SOLUTIONS" (click)="navBarFunc('SOLUTIONS')" href="#{{sections.solutions}}">SOLUTIONS</a></li>
                     <li class="col-md-2"><a id="HOME" (click)="navBarFunc('HOME')" routerLink="/home">HOME</a></li>
                 </ul>
             </div>
@@ -30,10 +30,10 @@
         </div>
         <div id="mySidenav" class="sidenav">
                 <a routerLink="/home">HOME</a>
-                <a routerLink="/solutions">SOLUTIONS</a>
-                <a routerLink="/portfolio">PORTFOLIO</a>
+                <a routerLink="#">SOLUTIONS</a>
+                <a routerLink="#">PORTFOLIO</a>
                 <a routerLink="/aboutus">ABOUT US</a>
-                <a routerLink="/footer">CONTACT</a>
+                <a routerLink="#">CONTACT</a>
         </div>
 
 </div>

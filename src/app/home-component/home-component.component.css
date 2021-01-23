@@ -26,8 +26,8 @@
 .banner img:nth-child(3){
   position: absolute;
   right: 15vw;
-  top: 20px;
-  height: 25vw;
+  bottom: 20px;
+  height: 20vw;
   z-index: 1;
 }
 
