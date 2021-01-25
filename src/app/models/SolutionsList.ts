@@ -4,4 +4,5 @@ export class SolutionsList{
     header:string;
     description:string;
     status:number;
+    image:string;
 }

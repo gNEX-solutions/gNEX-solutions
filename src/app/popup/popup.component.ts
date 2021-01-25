@@ -15,6 +15,8 @@ export class PopupComponent implements OnInit {
   header: string;
   @Input()
   description: string;
+  @Input()
+  image: string;
   xx:string;
   constructor() { }
 

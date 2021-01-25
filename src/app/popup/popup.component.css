@@ -126,7 +126,7 @@
     width: 2px;
   }
   .bottom {
-    background: rgba(32, 32, 32, 0.9);
+    background: rgba(32, 32, 32, 0.98);
     color:  #ffffff;
     font-size: 14px;
     padding-top: 5px;
@@ -254,3 +254,23 @@
    width:10px !important;
   }
 } 
+
+.popup-img{
+  width: fit-content;
+  height: 100%;
+}
+
+.popup-img img{
+  position: relative;
+  top: 20%;
+  bottom: 50%;
+  left: 10%;
+  margin: auto;
+}
+
+.popup-desc{
+  position: relative;
+  top: 20%;
+  bottom: 50%;
+  margin: auto;
+}

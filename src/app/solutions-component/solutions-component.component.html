@@ -20,7 +20,7 @@
               </li>
             </ul> -->
             <div  *ngFor="let list of solutionsList; let i = index" [attr.data-index]="i">
-                <app-popup [itaration_val]=i [header]=list.header [description]=list.description></app-popup>
+                <app-popup [itaration_val]=i [header]=list.header [description]=list.description [image]=list.image></app-popup>
             </div>
             <div class="pricing col-md-7 col-md-offset-5">
               <!-- <a routerLink="/pricing" class="pricing-text">See Pricing <i class="fa fa-caret-right" style="font-size:24px"></i></a> -->

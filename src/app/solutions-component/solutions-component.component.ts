@@ -34,31 +34,36 @@ export class SolutionsComponentComponent implements OnInit {
       {
         id: 0,
         header: "Web designing and development",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        image: "./assets/img/solutions/web-development.png",
+        description: "Looking for a customized website for your business? Our team can help you be the best by building the idea you have in your mind. Occupying the latest technologies along with industry best practices, let us show you how to turn your mere online presence to a powerful e-commerce platform which embarks your brand.",
         status: 0
       },
       {
         id: 1,
         header: "Mobile app development",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        image: "./assets/img/solutions/mobile-app-development.png",
+        description: "In an era of increasing smart phone usage, we provide promising solutions to make your business 100% future proof with applications that are one touch away. Our Mobile Application Development engages cross-platform practices to deliver simple, user-friendly solutions that can scale up your business.",
         status: 0
       },
       {
         id: 2,
         header: "Business Automation",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        image: "./assets/img/solutions/bussiness-automation.png",
+        description: "Whether you want to streamline your operations or reduce the amount of errors, our team is ready to work with you to transform your business from manual operations to automated business processes through software solutions that work and integrate. ",
         status: 0
       },
       {
         id: 3,
         header: "Graphic designing",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        image: "./assets/img/solutions/graphic.png",
+        description: "You tell your idea; we do the rest. Our creative graphic designers are willing to design your company logo, brochures, business stationary and other corporate materials with quality visual designs.",
         status: 0
       },
       {
         id: 4,
         header: "Branding",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        image: "./assets/img/solutions/digital-marketing.png",
+        description: "Let us show you how to take your business to the next level from where you are today. gNEX ensures boosting your exposure with professional branding content to make you thrive for excellence.",
         status: 0
       },
 
