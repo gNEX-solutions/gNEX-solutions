@@ -23,7 +23,7 @@
                     <li class="col-md-2"><a id="PORTFOLIO"(click)="navBarFunc('PORTFOLIO')"  href="/home#{{sections.portfolio}}">PORTFOLIO</a></li>
                     <li class="col-md-2"><a id="SOLUTIONS" (click)="navBarFunc('SOLUTIONS')"  href="/home#{{sections.solutions}}">SOLUTIONS</a></li>
                     <li class="col-md-2"><a id="HOME" (click)="navBarFunc('HOME')" routerLink="/home">HOME</a></li> -->
-                    <li class="col-md-2"><a id="CONTACT" (click)="navBarFunc('CONTACT')"   href="#contact" fragment="contact">CONTACT</a></li>
+                    <li class="col-md-2"><a id="CONTACT" (click)="navBarFunc('CONTACT')"   routerLink="."  fragment="contact">CONTACT</a></li>
                     <li class="col-md-2"><a id="ABOUT" (click)="navBarFunc('ABOUT')"  routerLink="."  fragment="aboutus">ABOUT US</a></li>
                     <li class="col-md-2"><a id="PORTFOLIO"(click)="navBarFunc('PORTFOLIO')"  routerLink="."  fragment="portfolio">PORTFOLIO</a></li>
                     <li class="col-md-2"><a id="SOLUTIONS" (click)="navBarFunc('SOLUTIONS')" routerLink="."  fragment="solutions" >SOLUTIONS</a></li>
@@ -35,10 +35,10 @@
         </div>
         <div id="mySidenav" class="sidenav">
                 <a routerLink="/home">HOME</a>
-                <a routerLink="/#{{sections.solutions}}">SOLUTIONS</a>
-                <a routerLink="/#{{sections.portfolio}}">PORTFOLIO</a>
-                <a routerLink="/#{{sections.aboutus}}">ABOUT US</a>
-                <a routerLink="/#{{sections.contact}}">CONTACT</a>
+                <a routerLink="."  fragment="solutions">SOLUTIONS</a>
+                <a routerLink="."  fragment="portfolio">PORTFOLIO</a>
+                <a routerLink="."  fragment="aboutus">ABOUT US</a>
+                <a routerLink="."  fragment="contact">CONTACT</a>
         </div>
 
 </div>
