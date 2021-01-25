@@ -12,6 +12,13 @@ body {
     padding-top: 2%;
 }
 
+.pricingTable-subtitle{
+    text-align: center;
+    color: #00300b;
+    font-size: 1.8em;
+    letter-spacing: 0.04em;
+    margin-bottom: 60px;
+}
 
 /*PRICE COLOR CODE START*/
 

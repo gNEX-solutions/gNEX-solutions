@@ -41,12 +41,13 @@
   height:400px;
 }
 .fx2 .item img {padding: 0 !important; display: block;  height: 100%; width:100%;}
-.fx2 a:hover .item img, .fx2 a:focus .item img {opacity: 0.5; -webkit-transform: scale(0.95); transform: scale(0.95);}
+.fx2 a:hover .item img, .fx2 a:focus .item img {opacity: 0; -webkit-transform: scale(1.05); transform: scale(1.05);}
 .fx2 h4, .fx2 p, .fx2 span {-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease;  transition: all .5s ease;} 
 .fx2 a .item h4 {font-family: 'Raleway', sans-serif; font-size: 16px; position: absolute; color:#fff; text-transform: uppercase; letter-spacing: 2px; position: absolute; top:42%; left:0; right:0; margin:0 auto; text-align: center; -webkit-filter: blur(5px); filter: blur(5px); opacity: 0;}
 .fx2 a:hover .item h4, .fx2 a:focus .item h4 {-webkit-filter: blur(0px); filter: blur(0px); opacity: 1;}
 .fx2 a .item p {font-family: 'Raleway', sans-serif; font-size: 8px; position: absolute; color:#fff; text-transform: uppercase; letter-spacing: 2px; position: absolute; top:53%; left:0; right:0; margin:0 auto; text-align: center; opacity: 0;}
 .fx2 a:hover .item p, .fx2 a:focus .item p {opacity: 1;}
+.fx2 .item:hover{background-color: rgb(2, 45, 42);}
 
 .fx2 .row{
   float: none; margin: 0 auto;
@@ -150,3 +151,7 @@ margin-top:50px;
 /* .carousel-caption h5{
   font-size:50px;
 } */
+
+.portfolio-style{
+
+}

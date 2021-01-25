@@ -4,17 +4,25 @@
 }
 
 .pricingTable>.pricingTable-title {
+    /* text-align: center; */
+    /* color: #6e768d; */
+    /* font-size: 3em; */
+    /* font-size: 300%; */
+    margin-bottom: 80px;
+    /* letter-spacing: 0.04em; */
+
+    font-size:50px;
+    padding:30px 0px;
     text-align: center;
-    color: #6e768d;
-    font-size: 3em;
-    font-size: 300%;
-    margin-bottom: 20px;
-    letter-spacing: 0.04em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #47d147;
+
 }
 
 .pricingTable>.pricingTable-subtitle {
     text-align: center;
-    color: #b4bdc6;
+    color: #00300b;
     font-size: 1.8em;
     letter-spacing: 0.04em;
     margin-bottom: 60px;

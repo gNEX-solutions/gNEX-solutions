@@ -91,6 +91,10 @@ export class NavbarComponentComponent implements OnInit {
       var button = document.getElementById(clickedButton);
       // button.style.background= "rgb(34,133,87)";
       button.classList.add("selected");
+
+
+      
+
   }
 
 }
