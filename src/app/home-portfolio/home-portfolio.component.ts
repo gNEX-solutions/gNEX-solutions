@@ -14,21 +14,21 @@ export class HomePortfolioComponent implements OnInit {
         image:"../assets/img/portfolio/cees.jpg",
         title:"CEES International",
         details:"ceesinternational.com",
-        link:"iceesglobal.com"
+        link:"https://www.iceesglobal.com/"
       },
       item2:{
         show:"block",
         image:"../assets/img/portfolio/ranvel.jpg",
         title:"Ranvel Lanka Pvt Ltd",
         details:"ranvellanka.com",
-        link:"ranvellanka.com"
+        link:"https://ranvellanka.com/"
       },
       item3:{
-        show:"none",
-        image:"",
-        title:"",
-        details:"",
-        link:""
+        show:"block",
+        image:"../assets/img/portfolio/bei-global.jpg",
+        title:"Business Excellence Institute",
+        details:"bei-global.com",
+        link:"https://bei-global.com/"
       },
       item4:{
         show:"none",
